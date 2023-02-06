@@ -238,6 +238,7 @@
 						"type": "Microsoft.Common.TextBox",
 						"label": "Cluster extension resource name",
 						"defaultValue": "CloudCasa",
+						"toolTip": "Value should be CloudCasa",
 						"constraints": {
 							"required": true,
 							"regex": "CloudCasa",

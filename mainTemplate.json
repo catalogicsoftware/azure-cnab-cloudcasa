@@ -2,6 +2,18 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "extensionResourceName": {
+            "type": "string",
+            "metadata": {
+                "description": "The name of the extension."
+            }
+        },
+        "cluster_id": {
+            "type": "string",
+            "metadata": {
+                "description": "The value of the cluster_id"
+            }
+        },
         "clusterResourceName": {
             "type": "String",
             "metadata": {
@@ -20,9 +32,6 @@
             "metadata": {
                 "description": "The location of AKS resource."
             }
-        },
-        "app-title": {
-            "type": "String"
         },
         "vmSize": {
             "type": "String",
