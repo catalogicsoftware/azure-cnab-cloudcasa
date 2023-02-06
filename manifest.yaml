@@ -1,8 +1,8 @@
 applicationName: cloudcasa
 publisher: "Catalogic Software"
 description: "Kubernetes data protection service"
-version: 3.2.0
-helmChart: "./cloudcasa"
+version: 3.3.0
+helmChart: "./charts/cloudcasa"
 clusterArmTemplate: "./mainTemplate.json"
 uiDefinition: "./createUIDefinition.json"
 registryServer: "catalogicsoftware.azurecr.io"

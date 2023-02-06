@@ -234,6 +234,18 @@
 				"label": "Cluster Extension Details",
 				"elements": [
 					{
+						"name": "extensionResourceName",
+						"type": "Microsoft.Common.TextBox",
+						"label": "Cluster extension resource name",
+						"defaultValue": "CloudCasa",
+						"constraints": {
+							"required": true,
+							"regex": "CloudCasa",
+							"validationMessage": "Value should be CloudCasa"
+						},
+						"visible": true
+					},
+					{
 						"name": "cluster_id",
 						"type": "Microsoft.Common.TextBox",
 						"label": "cluster_id",
@@ -245,18 +257,6 @@
 							"validationMessage": "Only lowercase alphanumeric and digit characters are allowed, and the value must be 24-30 characters long."
 						},
 						"visible": true
-					},
-					{
-						"name": "title",
-						"type": "Microsoft.Common.TextBox",
-						"label": "Extension Title",
-						"toolTip": "This will replace the title's value inside your values.yaml, if present",
-						"defaultValue": "CloudCasa",
-						"constraints": {
-							"required": true,
-							"regex": "^[a-z0-9A-Z ]{1,30}$",
-							"validationMessage": "Only alphanumeric characters are allowed, and the value must be 6-30 characters long."						 
-						}
 					}
 				]
 			}
@@ -269,7 +269,8 @@
 			"vmSize": "[steps('clusterDetails').newClusterSection.vmSize]",
 			"vmEnableAutoScale": "[steps('clusterDetails').newClusterSection.enableAutoScaling]",
 			"vmCount": "[steps('clusterDetails').newClusterSection.vmCount]",
-			"app-title": "[steps('extensionDetails').title]"
+			"extensionResourceName": "[steps('extensionDetails').extensionResourceName]",
+			"cluster_id": "[steps('extensionDetails').cluster_id]"
 		}
 	}
 }

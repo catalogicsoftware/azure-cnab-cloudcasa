@@ -184,13 +184,12 @@
         {
             "type": "Microsoft.KubernetesConfiguration/extensions",
             "apiVersion": "2022-04-02-preview",
-            "name": "CloudCasa",
+            "name": "[parameters('extensionResourceName')]",
             "properties": {
                 "extensionType": "[variables('clusterExtensionTypeName')]",
                 "autoUpgradeMinorVersion": true,
                 "releaseTrain": "[variables('releaseTrain')]",
                 "configurationSettings": {
-                    "title": "[parameters('app-title')]",
                     "cluster_id": "[parameters('cluster_id')]"
                 },
                 "configurationProtectedSettings": {
