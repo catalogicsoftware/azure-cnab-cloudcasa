@@ -5,9 +5,8 @@ cluster_id: ""
 
 global:
   azure:
-    billingIdentifier: DONOTMODIFY
     images:
       kagent:
-        digest: sha256:b8951651abcd68548f3a9f62205098079d44e78c2238323c3a5568265f062b29
+        digest: sha256:cb6e13e32d807253bcf3b9c5b13ab280d14514823da77d1c71cafca4453401a0
         image: kagent
         registry: catalogicsoftware.azurecr.io/marketplaceimages

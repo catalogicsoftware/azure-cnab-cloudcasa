@@ -6,7 +6,6 @@ metadata:
   namespace: cloudcasa-io
   labels:
     component: cloudcasa-kubeagent-manager
-    billing: {{ .Values.global.azure.billingIdentifier }}
 spec:
   selector:
     matchLabels:
@@ -17,6 +16,7 @@ spec:
     metadata:
       labels:
         app: cloudcasa-kubeagent-manager
+        azure-extensions-usage-release-identifier: {{.Release.Name}}
     spec:
       containers:
       - image: "{{ .Values.global.azure.images.kagent.registry }}/{{ .Values.global.azure.images.kagent.image }}@{{ .Values.global.azure.images.kagent.digest }}"
