@@ -42,7 +42,7 @@ spec:
         - name: KUBEMOVER_IMAGE
           value: "{{ .Values.global.azure.images.kagent.registry }}/{{ .Values.global.azure.images.kagent.image }}@{{ .Values.global.azure.images.kagent.digest }}"
         - name: DEPLOYMENT_PLATFORM
-          value: "azure-cnab"
+          value: "azure_cnab"
       restartPolicy: Always
       serviceAccountName: cloudcasa-io
       volumes:
