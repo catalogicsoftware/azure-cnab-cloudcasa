@@ -5,6 +5,12 @@ cluster_id: ""
 
 global:
   azure:
+    identity:
+      clientId: "DONOTMODIFY" # Azure populates this value at deployment time
+    marketplace:
+      planId: "DONOTMODIFY" # Azure populates this value at deployment time
+    extension:
+      resourceId: "DONOTMODIFY" # application's Azure Resource ID, Azure populates this value at deployment time
     images:
       kagent:
         digest: sha256:70390473a82f3a63778a6ac3c94078f9cb55abac8be0f1ceed79188fc6f15a9d

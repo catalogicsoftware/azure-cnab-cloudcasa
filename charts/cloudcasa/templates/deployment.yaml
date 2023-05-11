@@ -43,6 +43,21 @@ spec:
           value: "{{ .Values.global.azure.images.kagent.registry }}/{{ .Values.global.azure.images.kagent.image }}@{{ .Values.global.azure.images.kagent.digest }}"
         - name: DEPLOYMENT_PLATFORM
           value: "azure_cnab"
+        - name: AZURE_RESOURCE_ID
+          valueFrom:
+            configMapKeyRef:
+              name: azure-cnab-values
+              key: EXTENSION_RESOURCE_ID
+        - name: AZURE_PLAN_ID
+          valueFrom:
+            configMapKeyRef:
+              name: azure-cnab-values
+              key: PLAN_ID
+        - name: AZURE_CLIENT_ID
+          valueFrom:
+            configMapKeyRef:
+              name: azure-cnab-values
+              key: CLIENT_ID
       restartPolicy: Always
       serviceAccountName: cloudcasa-io
       volumes:
