@@ -91,7 +91,7 @@
 					]
 				},
 				"resourceGroup": {
-					"allowExisting": "[equals(basics('createNewCluster'), false)]"
+					"allowExisting": true
 				}
 			}
 		},
@@ -249,9 +249,9 @@
 					{
 						"name": "cluster_id",
 						"type": "Microsoft.Common.TextBox",
-						"label": "cluster_id",
+						"label": "Cluster Id",
 						"defaultValue": "",
-						"toolTip": "Only lowercase alphanumeric and digit characters are allowed, and the value must be 24-30 characters long.",
+						"toolTip": "Sign Up/Sign In to https://home.cloudcasa.io and add your Kubernetes cluster under the Protection tab. Note the returned cluster ID and provide here.",
 						"constraints": {
 							"required": true,
 							"regex": "^[a-z0-9]{24,30}$",
