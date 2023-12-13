@@ -19,12 +19,6 @@
             "metadata": {
                 "description": "The name of the Managed Cluster resource."
             }
-        },
-        "location": {
-            "type": "String",
-            "metadata": {
-                "description": "The location of AKS resource."
-            }
         }
     },
     "variables": {

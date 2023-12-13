@@ -78,7 +78,6 @@
 			}
 		],
 		"outputs": {
-			"location": "[location()]",
 			"clusterResourceName": "[steps('clusterDetails').existingClusterSection.existingClusterResourceName)]",
 			"extensionResourceName": "[steps('extensionDetails').extensionResourceName]",
 			"cluster_id": "[steps('extensionDetails').cluster_id]"
