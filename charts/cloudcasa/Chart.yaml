@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 3.4.9
+appVersion: 3.4.10
 description: CloudCasa backup service for Kubernetes and cloud native applications
 home: https://cloudcasa.io
 icon: https://raw.githubusercontent.com/catalogicsoftware/cloudcasa-helmchart/gh-pages/logo.png
@@ -15,4 +15,4 @@ maintainers:
 - email: support@cloudcasa.io
   name: catalogicsoftware
 name: cloudcasa
-version: 3.4.9
+version: 3.4.10

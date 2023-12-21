@@ -11,7 +11,9 @@
 				}
 			}
 		},
-		"basics": [],
+		"basics": [
+			{}
+		],
 		"steps": [
 			{
 				"name": "clusterDetails",
@@ -78,7 +80,7 @@
 			}
 		],
 		"outputs": {
-			"clusterResourceName": "[steps('clusterDetails').existingClusterSection.existingClusterResourceName)]",
+			"clusterResourceName": "[steps('clusterDetails').existingClusterSection.existingClusterResourceName]",
 			"extensionResourceName": "[steps('extensionDetails').extensionResourceName]",
 			"cluster_id": "[steps('extensionDetails').cluster_id]"
 		}
