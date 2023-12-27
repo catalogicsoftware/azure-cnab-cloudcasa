@@ -48,10 +48,7 @@
                 "publisher": "[variables('plan-publisher')]",
                 "product": "[variables('plan-offerID')]"
             },
-            "scope": "[concat('Microsoft.ContainerService/managedClusters/', parameters('clusterResourceName'))]",
-            "dependsOn": [
-                "[resourceId('Microsoft.ContainerService/managedClusters/', parameters('clusterResourceName'))]"
-            ]
+            "scope": "[concat('Microsoft.ContainerService/managedClusters/', parameters('clusterResourceName'))]"
         }
     ],
     "outputs": {
