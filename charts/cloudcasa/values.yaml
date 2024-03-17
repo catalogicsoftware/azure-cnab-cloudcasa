@@ -13,6 +13,6 @@ global:
       resourceId: "DONOTMODIFY" # application's Azure Resource ID, Azure populates this value at deployment time
     images:
       kagent:
-        digest: sha256:54f039d2ecd2e7efd802446d0feeb572a4c8686c02fd97d5a32b28cbea77996e
+        digest: sha256:16077e094f9b76aa1c33deff20c271f5bbb923fc730ad8ec6a7b28f95bc72ac2
         image: kagent
         registry: catalogicsoftware.azurecr.io/marketplaceimages

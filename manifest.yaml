@@ -1,7 +1,7 @@
 applicationName: cloudcasa
 publisher: "Catalogic Software"
 description: "Kubernetes data protection service"
-version: 3.4.13
+version: 3.4.14
 helmChart: "./charts/cloudcasa"
 clusterArmTemplate: "./mainTemplate.json"
 uiDefinition: "./createUIDefinition.json"
@@ -9,12 +9,3 @@ registryServer: "catalogicsoftware.azurecr.io"
 extensionRegistrationParameters:
   defaultScope: "cluster"
   namespace: "default"
-  supportedClusterTypes:
-    connectedClusters:
-      - distribution: ["All"]
-        distributionSupported: true
-        unsupportedVersions: null
-    managedClusters:
-      - distribution: ["All"]
-        distributionSupported: true
-        unsupportedVersions: null
